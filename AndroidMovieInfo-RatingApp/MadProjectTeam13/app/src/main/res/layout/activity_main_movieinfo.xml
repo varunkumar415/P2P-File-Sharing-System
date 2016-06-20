@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="match_parent" android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp"
+    android:paddingBottom="1dp" tools:context=".ui.Main_movieinfo"
+    android:contextClickable="false"
+    android:focusable="false"
+    android:background="@drawable/moviinfoback"
+    android:clickable="true">
+
+
+    <!--android:background="@drawable/movie_info"-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+    <TextView
+        android:id="@+id/hello_world_text_view"
+        android:text="@string/hello_world"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/search_edit_text"
+        android:hint="movie name"
+        android:textSize="15dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hello_world_text_view"
+        android:textColor="#000"
+        android:textStyle="bold"/>
+
+   <!-- <RadioGroup
+        android:id="@+id/search_radio_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_edit_text">
+        <RadioButton
+            android:id="@+id/philm_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Movie Name"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/philmi_star_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Person Name"
+            android:checked="false" />
+        </RadioGroup>-->
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hello_world_text_view"
+        android:text="@string/search"/>
+    </LinearLayout>
+</RelativeLayout>

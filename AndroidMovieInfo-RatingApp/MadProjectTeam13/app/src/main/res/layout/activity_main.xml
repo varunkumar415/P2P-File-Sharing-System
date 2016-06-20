@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="match_parent" android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp"
+    android:paddingBottom="1dp" tools:context=".MainActivity"
+    android:id="@+id/main_act"
+    android:contextClickable="false"
+    android:focusable="false"
+    android:background="@drawable/home"
+    android:clickable="true">
+
+
+    <!--android:background="@drawable/back2"-->
+    <TextView android:text="Welcome to Mega Movie Store" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username_show"
+        android:textSize="15dp"
+        android:paddingTop="3dp"
+        android:textStyle="bold"
+        android:textColor="#f70c04"
+        android:typeface="monospace"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Movie Information"
+        android:id="@+id/movie_info"
+        android:background="@drawable/button_2"
+        android:typeface="monospace"
+        android:elevation="10dp"
+        android:onClick="movieinfo"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/username_show"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Actor Information"
+        android:id="@+id/actor_info"
+        android:background="@drawable/button_2"
+        android:typeface="monospace"
+        android:elevation="10dp"
+        android:onClick="actorinfo"
+        android:layout_alignTop="@+id/movie_info"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text=" Movie WatchList"
+        android:id="@+id/share_info"
+        android:background="@drawable/button_2"
+        android:typeface="monospace"
+        android:elevation="10dp"
+        android:onClick="watchlist"
+        android:layout_below="@+id/popular_movie"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="79dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Now Playing Movies "
+        android:id="@+id/comapre_movie"
+        android:background="@drawable/button_2"
+        android:typeface="monospace"
+        android:elevation="10dp"
+        android:layout_below="@+id/actor_info"
+        android:layout_alignStart="@+id/actor_info"
+        android:layout_marginTop="56dp"
+        android:onClick="nowPlaying" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="SIGN              OUT"
+        android:id="@+id/nowplaying"
+        android:background="@drawable/button_2"
+        android:typeface="monospace"
+        android:elevation="10dp"
+        android:layout_alignStart="@+id/comapre_movie"
+        android:layout_alignBottom="@+id/share_info"
+        android:onClick="signout" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Most Popular Movies"
+        android:id="@+id/popular_movie"
+        android:background="@drawable/button_2"
+        android:typeface="monospace"
+        android:elevation="10dp"
+        android:onClick="popmovies"
+        android:layout_alignTop="@+id/comapre_movie"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
+
+

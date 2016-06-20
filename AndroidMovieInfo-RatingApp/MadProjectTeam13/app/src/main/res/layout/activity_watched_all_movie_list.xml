@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/watched"
+    tools:context="edu.iit.hawk.vkumar17.madprojectteam13.WatchedAllMovieListActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/listViewOrderHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/watched">
+
+
+            <TextView
+                android:id="@+id/menulabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:padding="10dp"
+                android:text="Users Movie Review" android:textSize="20sp"
+                android:textColor="#080808"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="75dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <TextView
+                    android:id="@+id/column6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Name" android:textSize="15sp"
+                    android:textColor="#080808"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginEnd="17dp" />
+
+
+                <TextView
+                    android:id="@+id/column1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Movie Name" android:textSize="15sp"
+                    android:textColor="#080808"
+                    android:textStyle="bold"
+                    android:layout_marginRight="30dp"
+
+
+                    />
+                <TextView
+                    android:id="@+id/column2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Review" android:textSize="15sp"
+                    android:textColor="#080808"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/column1"
+                    android:layout_toEndOf="@+id/column1" />
+
+
+            </RelativeLayout>
+
+            <ListView android:id="@+id/reviewList1" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_centerHorizontal="true"
+                />
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/Back"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Back"
+            android:background="#0ccfd6"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="backFunc" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

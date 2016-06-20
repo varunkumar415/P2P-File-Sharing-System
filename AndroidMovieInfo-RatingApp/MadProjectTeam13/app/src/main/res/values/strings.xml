@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">MADTEAM13</string>
+
+    <string name="hello_world">Enter Movie Name</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_movie_information">MovieInformation</string>
+    <string name="title_activity_welcome__screen">Welcome Screen</string>
+    <string name="title_activity_actor__information">Actor Information</string>
+    <string name="title_activity_comapre__movies">Compare Movies</string>
+    <string name="title_activity_trailer">Trailers</string>
+    <string name="title_activity_popular__movies">Popular Movies</string>
+    <string name="no_movies_found">No movies found</string>
+    <string name="close">Close</string>
+    <string name="search">Search</string>
+    <string name="title_activity_movies_list">MoviesListActivity</string>
+
+
+    <string name="action_sort_by">Sort by</string>
+    <string name="action_sort_by_popularity">Most Popular</string>
+    <string name="action_sort_by_rating">Highest Rated</string>
+    <string name="title_activity_detail">Movie Details</string>
+    <string name="rating">Rating</string>
+    <string name="release_date">Released</string>
+    <string name="details">Details</string>
+    <string name="modelTrailers">Trailers</string>
+    <string name="modelReviews">Reviews</string>
+    <string name="action_favorite">Favorite</string>
+    <string name="content_authority">edu.iit.hawk.vkumar17.madprojectteam13</string>
+    <string name="removed_from_favorites">Removed from Favorites</string>
+    <string name="added_to_favorites">Added to Favorites</string>
+    <string name="action_sort_by_favorite">Favorites</string>
+    <string name="action_share">Share</string>
+    <string name="tmdb_api_key">968f12643279971a28aa66d13d1453ad</string>
+    />
+
+
+    <string name="no_internet_title">Connectivity problem</string>
+    <string name="no_internet_message">No internet connection available please turn on your network services</string>
+    <string name="no_internet_negative_btn">EXIT</string>
+    <string name="no_internet_positive_btn">OKAY</string>
+    <string name="error_title">Connectivity problem</string>
+    <string name="error_message">Sorry there seems to be a connectivity problem please try again in a moment</string>
+    <string name="error_ok_button_text">EXIT</string>
+    <string name="title_activity_actor_filmography">Actor Filmography Activity</string>
+    <string name="title_activity_related_actors">RelatedActorsActivity</string>
+    <string name="title_activity_watched_all_movie_list">WatchedAllMovieListActivity</string>
+
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+android:background="@drawable/comapre"
+tools:context=".Compare_Movies"
+tools:showIn="@layout/activity_compare__movies">
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="15dp"
+    android:textStyle="bold"
+    android:textColor="#f70404"
+    android:text="*Hint : Enter two modelMovie in given textbox respectively and comapre."
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textSize="20dp" />
+
+<EditText
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/textView1"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="43dp"
+    android:hint="Enter First Movie Name"
+    android:textStyle="bold"
+    android:textColor="#f7ef04"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+<EditText
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/textView2"
+    android:layout_below="@+id/textView2"
+    android:layout_marginTop="47dp"
+    android:hint="Enter Second Movie Name"
+    android:textStyle="bold"
+    android:textColor="#f7ef04"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<Button
+    android:id="@+id/btnAdd"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/textView3"
+    android:layout_alignRight="@+id/textView3"
+    android:layout_below="@+id/textView3"
+    android:layout_marginTop="48dp"
+    android:textStyle="bold"
+    android:textColor="#f70404"
+    android:text="COMPARE" />
+
+
+
+
+</RelativeLayout>
+

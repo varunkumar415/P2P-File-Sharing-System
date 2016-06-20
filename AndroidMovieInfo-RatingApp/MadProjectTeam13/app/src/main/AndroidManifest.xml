@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.iit.hawk.vkumar17.madprojectteam13">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:exported="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/movies"
+        android:label="@string/app_name"
+        android:name=".SessionApplication"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="Mega Movie Store">
+
+        </activity>
+
+        <activity
+            android:name=".ui.Main_movieinfo"
+            android:label="Movie Information">
+        </activity>
+
+        <activity
+            android:name=".ui.MoviesListActivity"
+            android:label="Movie Information">
+        </activity>
+
+        <activity android:name=".ui.PersonListActivity" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login">
+
+    </activity>
+
+        <activity
+            android:name=".SignupActivity"
+            android:label="Sign up">
+
+        </activity>
+
+        <activity
+            android:name=".Welcome_Screen"
+            android:label="@string/title_activity_welcome__screen">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".NowPlayingActivity"
+            android:label="Now Playing" >
+        </activity>
+        <activity
+            android:name=".NowPlayingDetailActivity"
+            android:label="Now Playing Detail" >
+        </activity>
+
+
+        <activity
+            android:name=".MostpopmovActivity"
+            android:label="Most Popular Movies" >
+        </activity>
+        <activity
+            android:name=".DetailActivity"
+            android:label="Movie Detail"
+            android:parentActivityName=".MostpopmovActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MostpopmovActivity" />
+        </activity>
+<!--<modelActor information>-->
+        <activity
+            android:name=".actor_controllers.actor_activities.Actor_MainActivity"
+            android:label="@string/title_activity_actor__information" >
+        </activity>
+
+        <activity
+            android:name=".actor_controllers.actor_activities.Actor_FilmsActivity"
+            android:label="@string/title_activity_actor_filmography"
+            android:parentActivityName=".actor_controllers.actor_activities.Actor_MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".actor_controllers.actor_activities.Actor_MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".actor_controllers.actor_activities.Actors_Activity"
+            android:label="@string/title_activity_related_actors"
+            android:parentActivityName=".actor_controllers.actor_activities.Actor_MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".actor_controllers.actor_activities.Actor_MainActivity" />
+        </activity>
+
+
+        <activity
+            android:name=".WatchList_NoteActivity"
+            android:label="WatchList">
+
+        </activity>
+
+        <activity
+            android:name=".WatchedAllMovieListActivity"
+            android:label="@string/title_activity_watched_all_movie_list"
+
+            >
+        </activity>
+
+
+        <activity
+            android:name=".WatchedMovieListActivity"
+            android:label="Watched Movie List"
+            />
+        <!--<modelActor information>-->
+        <provider
+            android:authorities="@string/content_authority"
+            android:name=".data.Data_MovieProvider"
+            android:exported="false" />
+    </application>
+</manifest>

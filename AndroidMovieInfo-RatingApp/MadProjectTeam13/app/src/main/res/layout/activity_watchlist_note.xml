@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wish"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+tools:context=".WatchList_NoteActivity"
+    android:weightSum="1">
+
+    <!--android:background="@drawable/minority"-->
+    <TextView
+        android:id="@+id/edit4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="30dp"
+        android:text="WISHLIST"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#f90400"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Movie Name"
+        android:id="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:textColor="#0019f9" />
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_margin="20dp"
+        android:hint="Movie Name"
+        android:textStyle="bold"
+        android:textColor="#0019f9"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Description"
+        android:id="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:textColor="#0019f9"/>
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_margin="20dp"
+        android:hint="Description"
+        android:textStyle="bold"
+        android:textColor="#0019f9"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Movie viewed using"
+        android:id="@+id/textView"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:textColor="#0019f9"/>
+
+    <Button
+        android:id="@+id/user_history"
+        android:background="#7dd465"
+        android:textColor="#FFFFFF"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:text="My Wishlist"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/text2"
+        android:onClick="historyFunc"
+        android:layout_gravity="right" />
+
+    <CheckBox
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DVD"
+        android:layout_margin="10dp"
+        style="?android:attr/starStyle"
+        android:textColor="#0019f9"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/alluser_history"
+        android:background="#6572d4"
+        android:textColor="#FFFFFF"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:text="Movie Reviews"
+        android:layout_gravity="right"
+        android:layout_toRightOf="@+id/textView"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:onClick="allhistoryFunc" />
+
+    <CheckBox
+        android:id="@+id/text"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:text="CD"
+        android:layout_margin="10dp"
+        style="?android:attr/starStyle"
+        android:textColor="#0019f9"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/button_save"
+        android:background="#ff5044"
+        android:textColor="#FFFFFF"
+        android:layout_width="168dp"
+        android:layout_height="36dp"
+        android:onClick="addContant"
+        android:text="SAVE"
+        android:textSize="15dp"
+        android:layout_marginBottom="2dp"
+        android:textStyle="bold"
+        android:layout_gravity="right" />
+
+    <CheckBox
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bluray"
+        android:layout_margin="10dp"
+        style="?android:attr/starStyle"
+        android:textColor="#0019f9"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>
