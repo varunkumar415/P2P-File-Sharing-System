@@ -1,0 +1,8 @@
+Nov 29, 2015 4:38:48 PM Client_RedisDB main
+INFO: Logger started
+Nov 29, 2015 4:38:54 PM Client_RedisDB main
+INFO: Total time for PUT = 126msec
+Nov 29, 2015 4:39:04 PM Client_RedisDB main
+INFO: Total time for Get = 3msec
+Nov 29, 2015 4:39:12 PM Client_RedisDB main
+INFO: Total time for Delete = 60msec

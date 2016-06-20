@@ -1,0 +1,11 @@
+-Run Pssh.sh file (it will up all instances)
+-run runnable jar file for each project
+1) java -jar PA4_CassandraDB
+2) java -jar PA4_CouchDB
+3) java -jar PA4_MongoDB
+4) java -jar PA4_RedisDB
+
+
+make sure config.properties fill should be inside the same directory where runnable jar file kept
+
+-- log files will give the latency time.

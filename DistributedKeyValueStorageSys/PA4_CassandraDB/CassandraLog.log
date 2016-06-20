@@ -1,0 +1,8 @@
+Nov 29, 2015 4:55:29 PM Client_CassandraDB main
+INFO: Logger started
+Nov 29, 2015 4:55:33 PM Client_CassandraDB main
+INFO: Total time for PUT = 31msec
+Nov 29, 2015 4:55:34 PM Client_CassandraDB main
+INFO: Total time for Get = 35msec
+Nov 29, 2015 4:55:36 PM Client_CassandraDB main
+INFO: Total time for Delete = 25msec

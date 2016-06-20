@@ -1,0 +1,8 @@
+Nov 29, 2015 4:54:21 PM Client_CouchDB main
+INFO: Logger started
+Nov 29, 2015 4:54:25 PM Client_CouchDB main
+INFO: Total time for PUT = 143msec
+Nov 29, 2015 4:54:27 PM Client_CouchDB main
+INFO: Total time for Get = 127msec
+Nov 29, 2015 4:54:29 PM Client_CouchDB main
+INFO: Total time for Delete = 515msec

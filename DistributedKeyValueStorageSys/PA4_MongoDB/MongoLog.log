@@ -1,0 +1,8 @@
+Nov 29, 2015 4:41:38 PM Client_MongoDB main
+INFO: Logger started
+Nov 29, 2015 4:41:44 PM Client_MongoDB main
+INFO: Total time for PUT = 442msec
+Nov 29, 2015 4:41:48 PM Client_MongoDB main
+INFO: Total time for Get = 433msec
+Nov 29, 2015 4:41:49 PM Client_MongoDB main
+INFO: Total time for Delete = 148msec
