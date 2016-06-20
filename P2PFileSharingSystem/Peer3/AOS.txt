@@ -1,0 +1,101 @@
+To Develop a simple peer to peer (P2P) File sharing system , Which has two components: 
+
+1. A"central"indexing"server. This server indexes the contents of all of the peers that register with it. It 
+also  provides  search  facility  to  peers.  In  our  simple  version,  you  don't  need  to  implement 
+sophisticated searching algorithms; an exact match will be fine. Minimally, the server should provide 
+the following interface to the peer clients: 
+
+registry(peer id, file name, ...) LL invoked by a peer to register all its files with the indexing server. 
+The server then builds the index for the peer. Other sophisticated algorithms such as automatic 
+indexing are not required, but feel free to do whatever is reasonable. You may provide optional 
+Information to the server to make it more 'real', such as the clients’ bandwidth, etc. 
+
+search(file name) LL this procedure should search the index and return all the matching peers to 
+the requestor. 
+
+2 . A peer.  A  peer  is  both  a  client  and  a  server.  As  a  client,  the  user  specifies  a  file  name  with  the 
+indexing server using "lookup". The indexing server returns a list of all other peers that hold the file. 
+The user can pick one such peer and the client then connects to this peer and downloads the file. As 
+a server, the peer waits for requests from other peers and sends the requested file when receiving a 
+request. Minimally, the peer server should provide the following interface to the peer client: 
+
+obtain(file name) LL invoked by a peer to download a file from another peer. 
+Other requirements: 
+
+Both  the  indexing  server  and  a  peer  server  should  be  able  to  accept multiple  client  requests  at  the 
+same  time.  
+
+
+network speed and capacity of workstation,
+made personal computers more powerful and efficient than
+supercomputers of only 10 years ago[3]. The development of
+the network technology promotes the information
+management and the application mode of the enterprise to
+develop in two directions. First, the
+
+
+
+goal or aim :
+
+Peer-to-Peer File Sharing System :
+Conclusion:
+The goal of this assignment is to design and implement a simple Napster-like file sharing system. Here are some high-level design requirements of your system.
+A centralized server keeps track of which clients store what files.
+A client informs the server as to what files are contained in its local repository, but does not actually transmit file-data to the server.
+When a client requires a file that does not belong to its repository, a request is sent to the server. The server identifies some other client who stores the requested file and sends its identity to the requesting client. The file is then directly fetched by the requesting client from the node that has a copy of the file without requiring any server intervention.
+Multiple clients could be downloading different files from a target client at a given point in time. This requires the client code to be multithreaded.
+The client has a simple command-shell interpreter that is used to accept two kinds of commands.
+
+
+
+What is a Network Operating System?
+Unlike operating systems, such as Windows, that are designed for single users to control one computer, network operating systems (NOS) coordinate the activities of multiple computers across a network. The network operating system acts as a director to keep the network running smoothly.
+The two major types of network operating systems are:
+Peer-to-Peer
+Client/Server
+Nearly all modern networks are a combination of both. The networking design can be considered independent of the servers and workstations that will share it.
+Peer-to-Peer
+Peer-to-peer network operating systems allow users to share resources and files located on their computers and to access shared resources found on other computers. However, they do not have a file server or a centralized management source (See fig. 1). In a peer-to-peer network, all computers are considered equal; they all have the same abilities to use the resources available on the network. Peer-to-peer networks are designed primarily for small to medium local area networks. Nearly all modern desktop operating systems, such as Macintosh OSX, Linux, and Windows, can function as peer-to-peer network operating systems.
+
+Fig. 1. Peer-to-peer network
+Advantages of a peer-to-peer network:
+Less initial expense - No need for a dedicated server.
+Setup - An operating system (such as Windows XP) already in place may only need to be reconfigured for peer-to-peer operations.
+Disadvantages of a peer-to-peer network:
+Decentralized - No central repository for files and applications.
+Security - Does not provide the security available on a client/server network.
+Client/Server
+Client/server network operating systems allow the network to centralize functions and applications in one or more dedicated file servers (See fig. 2). The file servers become the heart of the system, providing access to resources and providing security. Individual workstations (clients) have access to the resources available on the file servers. The network operating system provides the mechanism to integrate all the components of the network and allow multiple users to simultaneously share the same resources irrespective of physical location. UNIX/Linux and the Microsoft family of Windows Servers are examples of client/server network operating systems.
+
+Fig. 2. Client/server network
+Advantages of a client/server network:
+Centralized - Resources and data security are controlled through the server.
+Scalability - Any or all elements can be replaced individually as needs increase.
+Flexibility - New technology can be easily integrated into system.
+Interoperability - All components (client/network/server) work together.
+Accessibility - Server can be accessed remotely and across multiple platforms.
+Disadvantages of a client/server network:
+Expense - Requires initial investment in dedicated server.
+Maintenance - Large networks will require a staff to ensure efficient operation.
+Dependence - When server goes down, operations will cease across the 
+network.
+
+----------------------------------------------------------------------------------------
+
+Socket :
+What is socket?
+A socket is one end-point of a two-way communication link between two programs running on the network. Socket classes are used to represent the connection between a client program and a server program. The java.net package provides two classes--Socket and ServerSocket--that implement the client side of the connection and the server side of the connection, respectively.
+
+Multithreading:
+Multithreading is the ability of a program or an operating system process to manage its use by more than one user at a time and to even manage multiple requests by the same user without having to have multiple copies of the programming running in the computer. Each user request for a program or system service (and here a user can also be another program) is kept track of as a thread with a separate identity. As programs work on behalf of the initial request for that thread and are interrupted by other requests, the status of work on behalf of that thread is kept track of until the work is completed.
+
+
+
+
+
+What are Sockets and Threads?
+A socket is a software endpoint that establishes bidirectional communication between a server program and one or more client programs. The socket associates the server program with a specific hardware port on the machine where it runs so any client program anywhere in the network with a socket associated with that same port can communicate with the server program.
+A server program typically provides resources to a network of client programs. Client programs send requests to the server program, and the server program responds to the request.
+One way to handle requests from more than one client is to make the server program multi-threaded. A multi-threaded server creates a thread for each communication it accepts from a client. A thread is a sequence of instructions that run independently of the program and of any other threads.
+Using threads, a multi-threaded server program can accept a connection from a client, start a thread for that communication, and continue listening for requests from other clients.
+
